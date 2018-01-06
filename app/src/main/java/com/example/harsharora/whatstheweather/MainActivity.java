@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
             String encodedCityName = URLEncoder.encode(cityName.getText().toString(), "UTF-8");
 
             DownloadTask task = new DownloadTask();
-            task.execute("http://api.openweathermap.org/data/2.5/weather?q="+encodedCityName+"&appid=ca7cd7aeb25c1075799a0f1a7c2f9a2b");
+            task.execute("http://api.openweathermap.org/data/2.5/weather?q="+encodedCityName+"&appid=<API KEY>");
 
 
         } catch (UnsupportedEncodingException e) {
